@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <div style="padding-top: 20px;">
+      <%= link_to 'Home', root_path  %> |
+      <%= link_to 'About', about_path  %> |
+      <%= link_to 'Contact', contact_path, class: "my-custom-class"  %>
+    </div>
     <%= yield %>
+    <h1>Footer</h1>
+
   </body>
 </html>
